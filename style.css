@@ -5,3 +5,23 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    border-bottom: 2px solid gray;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+}
