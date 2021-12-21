@@ -94,16 +94,16 @@
         <?php
             foreach ($faq as $questionBlock) {
                 echo '<div class="question">';
-                foreach ($questionBlock as $k => $v) {
-                    if ($k === "question") {
-                        echo '<h3>' . $v . '</h3>';
-                    } else if ($k === "subPoints") {
-                        foreach ($v as $l => $w) {
-                            if ($l === "subQuestion") {
-                                echo '<h4>' . $w . '</h4>';
+                foreach ($questionBlock as $questionKey => $questionValue) {
+                    if ($questionKey === "question") {
+                        echo '<h3>' . $questionValue . '</h3>';
+                    } else if ($questionKey === "subPoints") {
+                        foreach ($questionValue as $subKey => $subValue) {
+                            if ($subKey === "subQuestion") {
+                                echo '<h4>' . $subValue . '</h4>';
                             } else {
                                 echo '<ul>';
-                                foreach ($w as $subAnswer) {
+                                foreach ($subValue as $subAnswer) {
                                     echo '<li>' . $subAnswer . '</li>';
                                 };
                                 echo '</ul>';
@@ -111,7 +111,7 @@
                         }
                     } else {
                         echo '<ul>';
-                        foreach ($v as $paragraph) {
+                        foreach ($questionValue as $paragraph) {
                             if  (is_array($paragraph)){
                                 echo '<ol>';
                                 foreach ($paragraph as $value) {
