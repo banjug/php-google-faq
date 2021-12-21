@@ -70,13 +70,13 @@
     ?>
 
     <header>
-        <div>
-            <img src="img/google_logo.png" alt="">
+        <div class="logo-cont">
+            <img class="logo" src="img/google_logo.png" alt="">
             Privacy e Termini
         </div>
-        <div>
-            <i class="fas fa-th"></i>
-            <div>A</div>
+        <div class="profile">
+            <a href="" class="tools"><i class="fas fa-th"></i></a>
+            <a href="" class="user">A</a href="">
         </div>
     </header>
     
@@ -86,7 +86,7 @@
             <li><a href="">Norme sulla Privacy</a></li>
             <li><a href="">Termini di Servizio</a></li>
             <li><a href="">Tecnologie</a></li>
-            <li><a href="">Domande Frequenti</a></li>
+            <li><a class="active" href="">Domande Frequenti</a></li>
         </ul>
     </nav>
 
