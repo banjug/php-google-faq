@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,4 +24,8 @@ nav ul a {
     color: black;
     text-decoration: none;
     margin-right: 30px;
+}
+
+main {
+    
 }
