@@ -93,6 +93,7 @@
     <main>
         <?php
             foreach ($faq as $questionBlock) {
+                echo '<div class="question">';
                 foreach ($questionBlock as $k => $v) {
                     if ($k === "question") {
                         echo '<h3>' . $v . '</h3>';
@@ -132,12 +133,13 @@
                         echo '</ul>';
                     }
                 }
+                echo "</div>";
             }
         ?>
     </main>
 
     <footer>
-        
+
     </footer>
 
 </body>
